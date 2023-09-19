@@ -1,0 +1,542 @@
+[gd_scene load_steps=3 format=3 uid="uid://ut0sl86n4peh"]
+
+[ext_resource type="Script" path="res://scripts/RaycastTest.cs" id="1_tges5"]
+[ext_resource type="Texture2D" uid="uid://cybt11624r4u8" path="res://icon.svg" id="2_57v1j"]
+
+[node name="RaycastTest" type="Node2D"]
+script = ExtResource("1_tges5")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+target_position = Vector2(0, 512)
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D" type="RayCast2D" parent="RayCast2D"]
+target_position = Vector2(0, 512)
+collision_mask = 2
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D/RayCast2D"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D2" type="RayCast2D" parent="."]
+rotation = 0.261799
+target_position = Vector2(0, 512)
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D2"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D" type="RayCast2D" parent="RayCast2D2"]
+target_position = Vector2(0, 512)
+collision_mask = 2
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D2/RayCast2D"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D3" type="RayCast2D" parent="."]
+rotation = 0.523599
+target_position = Vector2(0, 512)
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D3"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D" type="RayCast2D" parent="RayCast2D3"]
+target_position = Vector2(0, 512)
+collision_mask = 2
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D3/RayCast2D"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D4" type="RayCast2D" parent="."]
+rotation = 0.785398
+target_position = Vector2(0, 512)
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D4"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D" type="RayCast2D" parent="RayCast2D4"]
+target_position = Vector2(0, 512)
+collision_mask = 2
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D4/RayCast2D"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D5" type="RayCast2D" parent="."]
+rotation = 1.0472
+target_position = Vector2(0, 512)
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D5"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D" type="RayCast2D" parent="RayCast2D5"]
+target_position = Vector2(0, 512)
+collision_mask = 2
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D5/RayCast2D"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D6" type="RayCast2D" parent="."]
+rotation = 1.309
+target_position = Vector2(0, 512)
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D6"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D" type="RayCast2D" parent="RayCast2D6"]
+target_position = Vector2(0, 512)
+collision_mask = 2
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D6/RayCast2D"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D7" type="RayCast2D" parent="."]
+rotation = 1.5708
+target_position = Vector2(0, 512)
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D7"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D" type="RayCast2D" parent="RayCast2D7"]
+target_position = Vector2(0, 512)
+collision_mask = 2
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D7/RayCast2D"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D8" type="RayCast2D" parent="."]
+rotation = 1.8326
+scale = Vector2(1, 1)
+target_position = Vector2(0, 512)
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D8"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D" type="RayCast2D" parent="RayCast2D8"]
+target_position = Vector2(0, 512)
+collision_mask = 2
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D8/RayCast2D"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D9" type="RayCast2D" parent="."]
+rotation = 2.0944
+target_position = Vector2(0, 512)
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D9"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D" type="RayCast2D" parent="RayCast2D9"]
+target_position = Vector2(0, 512)
+collision_mask = 2
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D9/RayCast2D"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D10" type="RayCast2D" parent="."]
+rotation = 2.35619
+target_position = Vector2(0, 512)
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D10"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D" type="RayCast2D" parent="RayCast2D10"]
+target_position = Vector2(0, 512)
+collision_mask = 2
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D10/RayCast2D"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D11" type="RayCast2D" parent="."]
+rotation = 2.61799
+target_position = Vector2(0, 512)
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D11"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D" type="RayCast2D" parent="RayCast2D11"]
+target_position = Vector2(0, 512)
+collision_mask = 2
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D11/RayCast2D"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D12" type="RayCast2D" parent="."]
+rotation = 2.87979
+target_position = Vector2(2.08165e-12, 512)
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D12"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D" type="RayCast2D" parent="RayCast2D12"]
+target_position = Vector2(0, 512)
+collision_mask = 2
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D12/RayCast2D"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D13" type="RayCast2D" parent="."]
+rotation = 3.14159
+target_position = Vector2(0, 512)
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D13"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D" type="RayCast2D" parent="RayCast2D13"]
+target_position = Vector2(0, 512)
+collision_mask = 2
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D13/RayCast2D"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D14" type="RayCast2D" parent="."]
+rotation = 3.40339
+target_position = Vector2(0, 512)
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D14"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D" type="RayCast2D" parent="RayCast2D14"]
+target_position = Vector2(0, 512)
+collision_mask = 2
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D14/RayCast2D"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D15" type="RayCast2D" parent="."]
+rotation = 3.66519
+target_position = Vector2(0, 512)
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D15"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D" type="RayCast2D" parent="RayCast2D15"]
+target_position = Vector2(0, 512)
+collision_mask = 2
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D15/RayCast2D"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D16" type="RayCast2D" parent="."]
+rotation = 3.92699
+target_position = Vector2(0, 512)
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D16"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D" type="RayCast2D" parent="RayCast2D16"]
+target_position = Vector2(0, 512)
+collision_mask = 2
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D16/RayCast2D"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D17" type="RayCast2D" parent="."]
+rotation = 4.18879
+target_position = Vector2(0, 512)
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D17"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D" type="RayCast2D" parent="RayCast2D17"]
+target_position = Vector2(0, 512)
+collision_mask = 2
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D17/RayCast2D"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D18" type="RayCast2D" parent="."]
+rotation = 4.45059
+target_position = Vector2(0, 512)
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D18"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D" type="RayCast2D" parent="RayCast2D18"]
+target_position = Vector2(0, 512)
+collision_mask = 2
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D18/RayCast2D"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D19" type="RayCast2D" parent="."]
+rotation = 4.71239
+target_position = Vector2(0, 512)
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D19"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D" type="RayCast2D" parent="RayCast2D19"]
+target_position = Vector2(0, 512)
+collision_mask = 2
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D19/RayCast2D"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D20" type="RayCast2D" parent="."]
+rotation = 4.97419
+scale = Vector2(1, 1)
+target_position = Vector2(0, 512)
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D20"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D" type="RayCast2D" parent="RayCast2D20"]
+target_position = Vector2(0, 512)
+collision_mask = 2
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D20/RayCast2D"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D21" type="RayCast2D" parent="."]
+rotation = 5.23599
+target_position = Vector2(0, 512)
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D21"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D" type="RayCast2D" parent="RayCast2D21"]
+target_position = Vector2(0, 512)
+collision_mask = 2
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D21/RayCast2D"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D22" type="RayCast2D" parent="."]
+rotation = 5.49779
+target_position = Vector2(0, 512)
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D22"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D" type="RayCast2D" parent="RayCast2D22"]
+target_position = Vector2(0, 512)
+collision_mask = 2
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D22/RayCast2D"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D23" type="RayCast2D" parent="."]
+rotation = 5.75959
+target_position = Vector2(0, 512)
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D23"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D" type="RayCast2D" parent="RayCast2D23"]
+target_position = Vector2(0, 512)
+collision_mask = 2
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D23/RayCast2D"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D24" type="RayCast2D" parent="."]
+rotation = 6.02139
+target_position = Vector2(2.08165e-12, 512)
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D24"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="RayCast2D" type="RayCast2D" parent="RayCast2D24"]
+target_position = Vector2(0, 512)
+collision_mask = 2
+collide_with_areas = true
+
+[node name="sp" type="Sprite2D" parent="RayCast2D24/RayCast2D"]
+modulate = Color(1, 0.192157, 0.207843, 1)
+position = Vector2(2.08165e-12, 512)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_57v1j")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_57v1j")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+path_postprocessing = 1

@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://chuxsulxe54w0"]
+
+[ext_resource type="Script" path="res://scripts/Tank.cs" id="1_0o2xr"]
+[ext_resource type="Texture2D" uid="uid://cqev108loya2x" path="res://sprite/T34Top.png" id="2_3miba"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xysft"]
+load_path = "res://.godot/imported/T34Body.png-bcb15415b30db1f0838b088a20c9deec.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_48chj"]
+size = Vector2(22, 40)
+
+[node name="T34Body" type="Sprite2D"]
+texture_filter = 1
+position = Vector2(114, 154)
+scale = Vector2(3, 3)
+texture = SubResource("CompressedTexture2D_xysft")
+script = ExtResource("1_0o2xr")
+
+[node name="T34Top" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(2.08165e-12, -10)
+texture = ExtResource("2_3miba")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+position = Vector2(0.333336, -7.33334)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+position = Vector2(-0.333336, 7.33334)
+shape = SubResource("RectangleShape2D_48chj")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)

@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://cw6lbm40by2i1"]
+
+[ext_resource type="Script" path="res://scripts/enermy.cs" id="1_3ksdc"]
+[ext_resource type="Texture2D" uid="uid://b14sfj4ep7m1q" path="res://icon.png" id="2_1ibd8"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mi20i"]
+radius = 57.0088
+
+[node name="enermy" type="CharacterBody2D"]
+script = ExtResource("1_3ksdc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(1, 0.372549, 0.321569, 1)
+texture = ExtResource("2_1ibd8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_mi20i")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+path_desired_distance = 24.76
+target_desired_distance = 24.28
+path_postprocessing = 1
+avoidance_enabled = true
+radius = 20.0
+debug_enabled = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://bhtsl6ttyp8ik"]
+
+[ext_resource type="Texture2D" uid="uid://cybt11624r4u8" path="res://icon.svg" id="1_fknd4"]
+[ext_resource type="Script" path="res://scripts/player.cs" id="1_kpxwl"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ns0ig"]
+radius = 63.0079
+
+[node name="player" type="CharacterBody2D"]
+input_pickable = true
+script = ExtResource("1_kpxwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_fknd4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ns0ig")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+path_desired_distance = 24.76
+target_desired_distance = 24.28
+path_postprocessing = 1
+avoidance_enabled = true
+radius = 20.0
+debug_enabled = true

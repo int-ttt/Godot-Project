@@ -1,0 +1,49 @@
+[gd_scene load_steps=3 format=3 uid="uid://x0272ouan1y6"]
+
+[ext_resource type="Texture2D" uid="uid://di3cief18g73r" path="res://sprite/top_view_survivor.png" id="2_okfsi"]
+
+[sub_resource type="CSharpScript" id="CSharpScript_4b0m3"]
+script/source = "using Godot;
+using System;
+
+public partial class Player : CharacterBody2D
+{
+	private NavigationAgent2D nav;
+	private int speed = 300, accel = 7;
+
+	// Called when the node enters the scene tree for the first time.
+	public override void _Ready()
+	{
+		nav = this.GetChild<NavigationAgent2D>(0);
+	}
+
+	public override void _PhysicsProcess(double delta)
+	{
+		if (nav.IsTargetReachable())
+		{
+			var next_loc = nav.TargetPosition;
+			var dir = GlobalPosition.DirectionTo(next_loc).Normalized();
+			GlobalPosition += dir * (int)delta * speed;
+		}
+
+		if (Input.IsActionPressed(\"LeftClick\")) nav.TargetPosition = GetGlobalMousePosition();
+	}
+}
+"
+
+[node name="soldier" type="CharacterBody2D"]
+position = Vector2(9, 3.5)
+scale = Vector2(0.5, 0.5)
+script = SubResource("CSharpScript_4b0m3")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+
+[node name="TopViewSurvivor" type="Sprite2D" parent="."]
+position = Vector2(18, 7)
+texture = ExtResource("2_okfsi")
+hframes = 10
+vframes = 2
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+build_mode = 1
+polygon = PackedVector2Array(-13, 11, -14, 30, -3, 33, 17, 30, 33, 25, 65, 24, 65, 19, 44, 19, 34, 1, 14, -3, 3, -17, -16, -6)
